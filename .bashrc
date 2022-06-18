@@ -26,3 +26,14 @@ alias news='newsboat'
 
 #dotfiles management
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+
+alias sc='sudo systemctl'
+
+alias mp3='yt-dlp --embed-metadata -f 'ba' -x --audio-format mp3'
+
+#launch vm on vbox
+function vm() { vboxmanage startvm "$1"; }
+
+
+
+EDITOR=/bin/nvim
