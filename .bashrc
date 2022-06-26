@@ -31,9 +31,15 @@ alias sc='sudo systemctl'
 
 alias mp3='yt-dlp --embed-metadata -f 'ba' -x --audio-format mp3'
 
+# Sync my default ytm playlist
+
+alias box=' cd /home/fgb/Music/box-of-sounds/ && yt-dlp --embed-metadata -c -f 'ba' -x --audio-format mp3 https://music.youtube.com/playlist?list=PL73czmZpevrfgrr1u8tE6K5izaJ4t0x-v && cd -'
+
 #launch vm on vbox
 function vm() { vboxmanage startvm "$1"; }
 
-
-
 EDITOR=/bin/nvim
+
+#Koha Debian VM
+alias koha='vboxmanage startvm debian --type headless'
+alias koha-stop='vboxmanage controlvm debian poweroff'
